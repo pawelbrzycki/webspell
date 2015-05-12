@@ -1,0 +1,340 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+function chkFormular() {
+	if(document.post.nickname.value == "") {
+		alert("You have to enter a nickname!");
+		document.post.nickname.focus();
+   		return false;
+	}
+	
+	if(document.post.usernamenew.value == "") {
+		alert("You have to enter a username!");
+		document.post.usernamenew.focus();
+   		return false;
+	}
+	
+	if(document.post.mail.value == "") {
+		alert("You have to enter your e-mail!");
+		document.post.mail.focus();
+		return false;
+	}
+	
+	if(document.post.mail.value.indexOf('@') == -1) {
+		alert("Your e-mail is not valid!");
+		document.post.mail.focus();
+		return false;
+	}
+	
+	if(document.post.firstname.value == "") {
+		alert("You have to enter your First-Name!");
+		document.post.firstname.focus();
+		return false;
+	}
+	
+	if(document.post.b_day.value < 1 || document.post.b_day.value > 31) {
+		alert("You have to enter your correct Birthday!");
+		document.post.b_day.focus();
+		return false;
+	}
+	
+	if(document.post.b_month.value < 1 || document.post.b_month.value > 12) {
+		alert("You have to enter your correct Birthday!");
+		document.post.b_month.focus();
+		return false;
+	}
+	
+	if(document.post.b_year.value < 1900 || document.post.b_year.value > 2050) {
+		alert("You have to enter your correct Birthday!");
+		document.post.b_year.focus();
+		return false;
+	}
+	
+}
+-->
+</script>
+<!--
+<a href="http://dd-gfx.de">Copy &copy; by xXRobofishXx &amp; Design Dimensions</a>
+-->
+<form method="post" name="post" action="index.php?site=myprofile" enctype="multipart/form-data" onSubmit="return chkFormular()">
+<table width="100%" border="0" cellspacing="1" cellpadding="2" bgcolor="$border" class="formtable">
+    <tr bgcolor="$bghead">
+      <td colspan="2" class="title">&nbsp; &#8226; Profile-Info:</td>
+    </tr>
+	<tr> 
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Nickname:*</td>
+      <td bgcolor="$bg2"><input type="text" name="nickname" value="$ds[nickname]" maxlength="30" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr bgcolor="$bg2"> 
+      <td align="right" bgcolor="$bg3">Username:*</td>
+      <td bgcolor="$bg4"><input name="usernamenew" type="text" value="$ds[username]" maxlength="30" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Password:</td>
+      <td bgcolor="$bg2">&#8226; <a href="index.php?site=myprofile&action=editpwd">edit 
+        password</a></td>
+    </tr>
+    <tr bgcolor="$bg2"> 
+      <td align="right" bgcolor="$bg3">E-mail:*</td>
+      <td bgcolor="$bg4"><input type="text" name="mail" value="$ds[email]" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">$viewavatar</td>
+      <td bgcolor="$bg2"><input name="avatar" type="file" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"> <span class="small"> 
+        <input class="input" name="delavatar" type="checkbox" value="1">
+        delete (max90/90) </span><br>or<br><input name="avatar_url" type="text" size="30" class="form_off" value="http://" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr bgcolor="$bg4"> 
+      <td align="right" bgcolor="$bg3">$viewpic</td>
+      <td bgcolor="$bg4"><input name="userpic" type="file" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"> <span class="small">
+        <input class="input" name="deluserpic" type="checkbox" value="1">
+        delete (max230/210)</span><br>or<br><input name="userpic_url" type="text" size="30" class="form_off" value="http://" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" valign="top" bgcolor="$bg1">Signature:</td>
+      <td bgcolor="$bg2"><textarea name="usertext" cols="70" rows="2" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'" style="width:100%">$usertext</textarea></td>
+    </tr>
+    <tr> 
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+    <tr bgcolor="$bghead"> 
+      <td colspan="2" class="title">&nbsp; &#8226; Personal-Info:</td>
+    </tr>
+    <tr> 
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">First Name:*</td>
+      <td bgcolor="$bg2"><input type="text" name="firstname" value="$firstname" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr bgcolor="$bg2"> 
+      <td align="right" bgcolor="$bg3">Last Name:</td>
+      <td bgcolor="$bg4"><input type="text" name="lastname" value="$lastname" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Date of Birth:*</td>
+      <td bgcolor="$bg2"><input type="text" name="b_day" value="$b_day" size="2" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'">
+        . 
+        <input type="text" name="b_month" value="$b_month" size="2" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'">
+        . 
+        <input type="text" name="b_year" value="$b_year" size="4" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr bgcolor="$bg2"> 
+      <td align="right" bgcolor="$bg3">Sexuality:</td>
+      <td bgcolor="$bg4"><select name="sex">$sex
+        </select></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Country:</td>
+      <td bgcolor="$bg2">$country 
+        <select name="flag">$countries
+        </select></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Town:*</td>
+      <td bgcolor="$bg4"><input type="text" name="town" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'" value="$town"></td>
+    </tr>
+    <tr bgcolor="$bg2"> 
+      <td align="right" bgcolor="$bg1">icq#:</td>
+      <td bgcolor="$bg2"><input type="text" name="icq" value="$ds[icq]" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr bgcolor="$bg3"> 
+      <td align="right" bgcolor="$bg3">XFIRE:</td>
+      <td bgcolor="$bg4"><input type="text" name="xfire" value="$ds[xfire]" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr bgcolor="$bg2"> 
+      <td align="right" bgcolor="$bg1">XFIRE-Style:</td>
+      <td bgcolor="$bg2"><select name="xfirestyle">'.$xlist.'</select>&nbsp;<select name="xfiregroesse">'.$xflist.'</select>
+    </tr>
+    <tr bgcolor="$bg3">
+      <td align="right" bgcolor="$bg3">Homepage:</td>
+      <td bgcolor="$bg4"><input type="text" name="homepage" value="$ds[homepage]" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'" maxlength="255">&nbsp;</td>
+   </tr>
+    <tr bgcolor="$bg2">
+      <td align="right" valign="top" bgcolor="$bg1">About myself:<br> <br> <b>options:</b><br>
+        <span class="small">HTML is OFF<br>
+        <a href="javascript:MM_openBrWindow('code.php','BBCode','scrollbars=yes,width=600,height=500')">BBCode</a> 
+        is ON<br>
+        <a href="javascript:MM_openBrWindow('smileys.php','Smileys','scrollbars=yes,width=340,height=500')">Smilies</a> 
+        are ON</span> </td>
+      <td bgcolor="$bg2"><textarea name="message" cols="70" rows="8" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'" style="width:100%">$ds[about]</textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+	<tr bgcolor="$bghead">
+      <td colspan="2" class="title">&nbsp; &#8226; Options:</td>
+    </tr>
+	<tr>
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+    <tr bgcolor="$bg2">
+      <td align="right" bgcolor="$bg1">Newsletter:</td>
+      <td bgcolor="$bg2"><select name="newsletter">$newsletter
+        </select></td>
+    </tr>
+    <tr bgcolor="$bg2">
+      <td align="right" bgcolor="$bg3">Mail on new PM:</td>
+      <td bgcolor="$bg4"><select name="pm_mail">$pm_mail
+        </select></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+	<tr bgcolor="$bghead"> 
+      <td colspan="2" class="title">&nbsp; &#8226; Clan-Info:</td>
+    </tr>
+	<tr> 
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Clan-Tag:</td>
+      <td bgcolor="$bg2"><input type="text" name="clantag" value="$clantag" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr bgcolor="$bg2"> 
+      <td align="right" bgcolor="$bg3">Clan-Name:</td>
+      <td bgcolor="$bg4"><input type="text" name="clanname" value="$clanname" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Clan-HP:</td>
+      <td bgcolor="$bg2"><input type="text" name="clanhp" value="$clanhp" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr bgcolor="$bg2"> 
+      <td align="right" bgcolor="$bg3">Clan-Irc:</td>
+      <td bgcolor="$bg4"><input type="text" name="clanirc" value="$clanirc" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Esl-Nick:</td>
+      <td bgcolor="$bg2"><input type="text" name="clanesl" value="$clanesl" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Clan-History:</td>
+      <td bgcolor="$bg4"><input type="text" name="clanhistory" value="$clanhistory" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+	<tr bgcolor="$bghead"> 
+      <td colspan="2" class="title">&nbsp; &#8226; Equipment-Info:</td>
+    </tr>
+	<tr> 
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">CPU:</td>
+      <td bgcolor="$bg2"><input type="text" name="cpu" value="$cpu" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Mainboard:</td>
+      <td bgcolor="$bg4"><input type="text" name="mainboard" value="$mainboard" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">RAM:</td>
+      <td bgcolor="$bg2"><input type="text" name="ram" value="$ram" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Monitor:</td>
+      <td bgcolor="$bg4"><input type="text" name="monitor" value="$monitor" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Graphiccard:</td>
+      <td bgcolor="$bg2"><input type="text" name="graphiccard" value="$graphiccard" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Soundcard:</td>
+      <td bgcolor="$bg4"><input type="text" name="soundcard" value="$soundcard" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Storage:</td>
+      <td bgcolor="$bg2"><input type="text" name="storage" value="$storage" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">I-Connection:</td>
+      <td bgcolor="$bg4"><input type="text" name="connection" value="$connection" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Earphones:</td>
+      <td bgcolor="$bg2"><input type="text" name="headset" value="$headset" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Keyboard:</td>
+      <td bgcolor="$bg4"><input type="text" name="keyboard" value="$keyboard" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Mouse:</td>
+      <td bgcolor="$bg2"><input type="text" name="mouse" value="$mouse" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Mousepad:</td>
+      <td bgcolor="$bg4"><input type="text" name="mousepad" value="$mousepad" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+	<tr bgcolor="$bghead"> 
+      <td colspan="2" class="title">&nbsp; &#8226; Favorite...:</td>
+    </tr>
+	<tr> 
+      <td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Game:</td>
+      <td bgcolor="$bg2"><input type="text" name="fgame" value="$fgame" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Clan:</td>
+      <td bgcolor="$bg4"><input type="text" name="fclan" value="$fclan" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Map:</td>
+      <td bgcolor="$bg2"><input type="text" name="fmap" value="$fmap" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Weapon:</td>
+      <td bgcolor="$bg4"><input type="text" name="fweapon" value="$fweapon" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Food:</td>
+      <td bgcolor="$bg2"><input type="text" name="ffood" value="$ffood" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Drink:</td>
+      <td bgcolor="$bg4"><input type="text" name="fdrink" value="$fdrink" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Movie:</td>
+      <td bgcolor="$bg1"><input type="text" name="fmovie" value="$fmovie" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Music:</td>
+      <td bgcolor="$bg4"><input type="text" name="fmusic" value="$fmusic" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Song:</td>
+      <td bgcolor="$bg2"><input type="text" name="fsong" value="$fsong" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Book:</td>
+      <td bgcolor="$bg4"><input type="text" name="fbook" value="$fbook" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Actor / Actress:</td>
+      <td bgcolor="$bg2"><input type="text" name="factor" value="$factor" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg3">Car:</td>
+      <td bgcolor="$bg4"><input type="text" name="fcar" value="$fcar" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr> 
+      <td align="right" bgcolor="$bg1">Sport:</td>
+      <td bgcolor="$bg2"><input type="text" name="fsport" value="$fsport" size="30" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></td>
+    </tr>
+    <tr bgcolor="$bghead" height="24">
+		<td bgcolor="$bg1"></td>
+      <td height="24" bgcolor="$bg2"><input type="submit" name="submit" value="update profile">
+        fields marked with * are required fields</td>
+    </tr>
+  </table>
+</form>

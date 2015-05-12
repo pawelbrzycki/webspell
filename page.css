@@ -1,0 +1,169 @@
+#page { width:1102px; height:auto; margin:auto; }
+#header { background:url(styles/header.jpg); width:1102px; height:150px; }
+#bannerrotation { width:468px; height:60px; padding-top:43px; margin-left:580px; overflow:hidden; }
+#puffer { background:url(styles/puffer.jpg); width:1102px; height:auto; }
+
+/* ---| LEFT |--- */
+#left { width:768px; height:auto; float:left; }
+#navi { background:url(styles/navi/navibg.jpg); width:768px; height:33px; overflow:hidden; }
+#navi ul { list-style-type:none; margin:0px; padding:0px 0px 0px 17px; }
+#navi li { list-style-type:none; margin:0px; padding:0px; float:left; }
+#navi a { height:33px; display:block; cursor:pointer; text-decoration:none; font-size:0px; color:#5fa4c1; }
+#main { background:url(styles/navi/main.jpg); width:99px; height:33px; }
+#main:hover a:hover, #main a.aktiv { background:url(styles/navi/mainh.jpg); width:99px; height:33px; }
+#clan { background:url(styles/navi/clan.jpg); width:99px; height:33px; }
+#clan:hover a:hover, #clan a.aktiv { background:url(styles/navi/clanh.jpg); width:99px; height:33px; }
+#comm { background:url(styles/navi/comm.jpg); width:99px; height:33px; }
+#comm:hover a:hover, #comm a.aktiv { background:url(styles/navi/commh.jpg); width:99px; height:33px; }
+#media { background:url(styles/navi/media.jpg); width:99px; height:33px; }
+#media:hover a:hover, #media a.aktiv { background:url(styles/navi/mediah.jpg); width:99px; height:33px; }
+#misc { background:url(styles/navi/misc.jpg); width:99px; height:33px; }
+#misc:hover a:hover, #misc a.aktiv { background:url(styles/navi/misch.jpg); width:99px; height:33px; }
+#subnavi { background:url(styles/navi/subnavibg.jpg); width:768px; height:34px; overflow:hidden; }
+#subnavi ul { list-style-type:none; margin:0; padding:0; }
+#subnavi li { list-style-type:none; margin:14px 0 0 34px; padding:0; float:left; display:inline; }
+#subnavi a { height:8px; display:block; cursor:pointer; text-decoration:none; font-size:0px; color:#353531; }
+
+#news { background:url(styles/navi/main/news.png); width:26px; height:7px; }
+#news:hover { background:url(styles/navi/main/newsh.png); width:26px; height:7px; }
+#archives { background:url(styles/navi/main/archives.png); width:41px; height:8px; }
+#archives:hover { background:url(styles/navi/main/archivesh.png); width:41px; height:8px; }
+#articles { background:url(styles/navi/main/articles.png); width:38px; height:8px; }
+#articles:hover { background:url(styles/navi/main/articlesh.png); width:38px; height:8px; }
+#calendar { background:url(styles/navi/main/calendar.png); width:43px; height:7px; }
+#calendar:hover { background:url(styles/navi/main/calendarh.png); width:43px; height:7px; }
+#faq { background:url(styles/navi/main/faq.png); width:17px; height:8px; }
+#faq:hover { background:url(styles/navi/main/faqh.png); width:17px; height:8px; }
+#search { background:url(styles/navi/main/search.png); width:33px; height:9px; }
+#search:hover { background:url(styles/navi/main/searchh.png); width:33px; height:9px; }
+
+#squads { background:url(styles/navi/clan/squads.png); width:35px; height:8px; } 
+#squads:hover { background:url(styles/navi/clan/squadsh.png); width:35px; height:8px; } 
+#members { background:url(styles/navi/clan/members.png); width:43px; height:8px; }
+#members:hover { background:url(styles/navi/clan/membersh.png); width:43px; height:8px; }
+#clanwars { background:url(styles/navi/clan/matches.png); width:39px; height:8px; }
+#clanwars:hover { background:url(styles/navi/clan/matchesh.png); width:39px; height:8px; }
+#about { background:url(styles/navi/clan/aboutus.png); width:42px; height:7px; }
+#about:hover { background:url(styles/navi/clan/aboutush.png); width:42px; height:7px; }
+#history { background:url(styles/navi/clan/history.png); width:36px; height:8px; }
+#history:hover { background:url(styles/navi/clan/historyh.png); width:36px; height:8px; }
+#awards { background:url(styles/navi/clan/awards.png); width:37px; height:9px; }
+#awards:hover { background:url(styles/navi/clan/awardsh.png); width:37px; height:9px; }
+
+#forum { background:url(styles/navi/comm/forum.png); width:32px; height:8px; }
+#forum:hover { background:url(styles/navi/comm/forumh.png); width:32px; height:8px; }
+#guestbook { background:url(styles/navi/comm/guestbook.png); width:52px; height:8px; }
+#guestbook:hover { background:url(styles/navi/comm/guestbookh.png); width:52px; height:8px; }
+#users { background:url(styles/navi/comm/users.png); width:26px; height:8px; }
+#users:hover { background:url(styles/navi/comm/usersh.png); width:26px; height:8px; }
+#whois { background:url(styles/navi/comm/whoisonline.png); width:65px; height:7px; }
+#whois:hover { background:url(styles/navi/comm/whoisonlineh.png); width:65px; height:7px; }
+#polls { background:url(styles/navi/comm/polls.png); width:25px; height:7px; }
+#polls:hover { background:url(styles/navi/comm/pollsh.png); width:25px; height:7px; }
+#servers { background:url(styles/navi/comm/servers.png); width:36px; height:9px; }
+#servers:hover { background:url(styles/navi/comm/serversh.png); width:36px; height:9px; }
+
+#downloads { background:url(styles/navi/media/downloads.png); width:56px; height:8px; }
+#downloads:hover { background:url(styles/navi/media/downloadsh.png); width:56px; height:8px; }
+#demos { background:url(styles/navi/media/demos.png); width:32px; height:8px; }
+#demos:hover { background:url(styles/navi/media/demosh.png); width:32px; height:8px; }
+#links { background:url(styles/navi/media/links.png); width:23px; height:8px; }
+#links:hover { background:url(styles/navi/media/linksh.png); width:23px; height:8px; }
+#gallery { background:url(styles/navi/media/gallery.png); width:36px; height:7px; }
+#gallery:hover { background:url(styles/navi/media/galleryh.png); width:36px; height:7px; }
+#linkus { background:url(styles/navi/media/linkus.png); width:32px; height:7px; }
+#linkus:hover { background:url(styles/navi/media/linkush.png); width:32px; height:7px; }
+
+#sponsor { background:url(styles/navi/misc/sponsors.png); width:45px; height:8px; }
+#sponsor:hover { background:url(styles/navi/misc/sponsorsh.png); width:45px; height:8px; }
+#newsletter { background:url(styles/navi/misc/newsletter.png); width:55px; height:8px; }
+#newsletter:hover { background:url(styles/navi/misc/newsletterh.png); width:55px; height:8px; }
+#contact { background:url(styles/navi/misc/contact.png); width:39px; height:8px; }
+#contact:hover { background:url(styles/navi/misc/contacth.png); width:39px; height:8px; }
+#fightus { background:url(styles/navi/misc/fightus.png); width:38px; height:7px; }
+#fightus:hover { background:url(styles/navi/misc/fightush.png); width:38px; height:7px; }
+#joinus { background:url(styles/navi/misc/joinus.png); width:32px; height:7px; }
+#joinus:hover { background:url(styles/navi/misc/joinush.png); width:32px; height:7px; }
+#imprint { background:url(styles/navi/misc/impressum.png); width:51px; height:9px; }
+#imprint:hover { background:url(styles/navi/misc/impressumh.png); width:51px; height:9px; }
+
+#matchticker { background:url(styles/matchticker/matchticker.jpg); width:749px; height:110px; margin:6px 11px 8px 8px; overflow:hidden; }
+#matches { width:614px; height:103px; float:left; padding:4px 10px 3px 34px; } 
+#matchselection { width:91px; height:110px; float:left; }
+#matchselection ul { width:auto; list-style-type:none; margin:0px; padding:17px 27px; }
+
+#featureandheadline { width:749px; height:203px; margin:0px 11px 0px 8px; }
+#feature { width:349px; height:203px; float:left; padding-right:25px; } 
+#headlines { width:366px; height:203px; float:left; padding-right:9px; }
+
+#content { width:749px; height:auto; margin:8px 11px 8px 8px; }
+#video { width:350px; height:auto; margin:8px 0 8px 19px; float:left; }
+#voting { width:375px; height:auto; margin:8px 0 8px 24px; float:left; }
+
+/* ---| RIGHT |--- */
+#right { width:334px; height:auto; float:left; }
+#loginbutton { background:url(styles/login/loginbutton.jpg); width:334px; height:33px; }
+#logintop { background:url(styles/login/logintop.jpg); width:334px; height:2px; overflow:hidden; }
+#loginbg { background:url(styles/login/loginbg.jpg); width:334px; height:116px; }
+#loginbottom { background:url(styles/login/loginbottom.jpg); width:334px; height:2px; overflow:hidden; }
+#matchbutton { background:url(styles/matchcenter/matchbutton.jpg); width:334px; height:32px; }
+#matchbg { background:url(styles/matchcenter/matchbg.jpg); width:313px; height:135px; padding-top:24px; padding-left:21px; }
+#threadsbutton { background:url(styles/forumfiles/forumbutton.jpg); width:334px; height:32px; }
+#filesbutton { background:url(styles/forumfiles/downloadbutton.jpg); width:334px; height:33px; }
+
+/*HEADLINES*/
+.headline { width:366px; height:31px; }
+.headpfeil { width:11px; height:17px; padding-top:14px; float:left; }
+.headtext { width:349px; height:21px; padding-left:6px; padding-top:10px; float:left; }
+
+/*RESULTS*/
+.matchresult { width:103px; height:105px; float:left; padding-top:5px; padding-right:19px; }
+.matchleft { float:left; padding-top:2px; }
+.matchright { float:right; font-size:13px; font-weight:bold; }
+.matchtop { width:93px; height:15px; padding:7px 10px 8px 0px }
+.matchdown { width:93px; height:15px; padding-top:8px; padding-right:10px; }
+
+/*LOGGED*/
+.logged { width:334px; height:116px; }
+.loggedava { width:80px; height:101px; padding:15px 5px 0px 20px; float:left; }
+.loggedtext { width:214px; height:106px; padding-top:10px; float:left; }
+
+/*THREADS*/ /*FILES*/
+.boxright { width:334px; height:auto; }
+.square { width:5px; height:5px; padding:14px 14px 0px 14px; float:left; } 
+.boxrighttext { width:301px; height:30px; padding-top:4px; float:left; }
+.boxrighttext p { padding:0px; margin:0px; }
+.boxrighttext a, .boxrighttext a:visited, .boxrighttext a:active { font-size:11px; color:#5e5d5d; text-decoration:none; font-family:Tahoma, Geneva, sans-serif; }
+.boxrighttext a:hover { color:#7e7d7d; text-decoration:none; font-family:Tahoma, Geneva, sans-serif; }
+.strich { background-color: #e0e0e0; height:1px; overflow:hidden; }
+
+/*MATCHCENTER*/
+.logo { width:100px; height:100px; float:left; }
+.vs { width:79px; height:100px; padding-left:5px; padding-right:5px; float:left; }
+.team1 { width:100px; height:20px; padding-top:5px; padding-right:89px; text-align:center; float:left; font:Tahoma, Geneva, sans-serif 12px; font-weight:bold; color:#fff; }
+.team2 { width:100px; height:20px; padding-top:5px; text-align:center; float:left; font:Tahoma, Geneva, sans-serif 12px; font-weight:bold; color:#fff; }
+
+/*NEWS1*/
+.news1gesamt { width:749px; height:auto; border-bottom:3px solid #5fa4c1; border-top:3px solid #5fa4c1; }
+.news1inhalt { width:741px; height:auto; padding:0px 4px 5px 4px; }
+.news1pic { width:195px; height:132px; float:left; padding:18px 13px 0px 2px; }
+.news1text { width:531px; height:auto; float:left; }
+.news1headline { width:auto; height:16px; float:left; padding-top:7px; }
+.news1line { background:#e5e5e5; width:531px; height:1px; overflow:hidden; }
+.news1span { font-size:9px; float:left; padding:6px; }
+.news1span2 { font-size:9px; float:right; padding:6px; }
+
+/*NEWS2*/
+.news2gesamt { width:354px; height:auto; float:left; padding-left:10px; padding-right:10px; }
+.news2head { width:352px; height:16px; padding-left:2px; padding-top:7px; }
+.news2line { background:#e5e5e5; width:354px; height:1px; overflow:hidden; }
+.news2span { font-size:9px; float:left; padding:1px 4px 7px 2px; }
+
+/*NEWS2*/
+.pollline { background:#e5e5e5; width:354px; height:1px; overflow:hidden; margin:3px 0; }
+.pollbg { width:344px; height:15px; padding:1px; border:1px solid #e5e5e5; }
+
+/*CONTENTDSLIDER*/
+.sliderwrapper { position:relative; overflow:hidden; border:0px; width:349px; height:203px; }
+.sliderwrapper .contentdiv { visibility:hidden; position:absolute; left:0; top:0; padding:0px; width:349px; height:203px; }
+.pagination { visibility:hidden; }
